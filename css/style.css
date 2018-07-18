@@ -1,0 +1,506 @@
+/* ========================================== Start Body ========================================== */
+
+*{
+    -webkit-box-sizing:border-box;
+    -mos-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+/* Start Main Rulez */
+
+body {
+    perspective:500px;
+    font-family:'Hind', sans-serif;
+}
+
+.Container {width:1170px; margin:auto;}
+
+ul, ol {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+a {text-decoration:none;}
+
+.clear {clear:both;}
+
+/* End Main Rulez */
+
+/* ========================================== End Body ========================================== */
+
+/* ========================================== Start navgation ========================================== */
+
+nav {
+    overflow:hidden;
+    width:100%;
+    border-bottom:1px solid black;
+}
+
+nav .logo {
+    float:left;
+    background-color:#E33B3B;
+    width:6%;
+    text-align:center;  
+}
+
+nav .logo h1 {line-height:.8;}
+
+nav .logo h1 a {
+    color:#FFF;
+    font-size:23px;
+    font-weight:100;
+    letter-spacing:4px;
+}
+
+nav .menu {
+    width:80%;
+}
+
+nav .menu ul {
+    text-align:center;
+    margin-left:25%;
+}
+
+nav .menu ul li {
+    display:inline-block;
+    padding-right:3%;
+    padding-top:5%;
+}
+
+nav .underline-from-center{
+    color:#8a8787;
+    font-size:19px;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    position:relative;
+    overflow:hidden;
+    vertical-align:middle;
+}
+
+nav .underline-from-center:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    left:51%;
+    right:51%;
+    height:4px;
+    background:#E33B3B;
+    -webkit-transition-property:left, right;
+    transition-property:left, right;
+    -webkit-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-timing-function:ease-out;
+    transition-timing-function:ease-out;
+    bottom:-15px;
+}
+
+nav .underline-from-center:hover {
+    color:#E33B3B;
+}
+
+nav .underline-from-center:hover:before, nav .underline-from-center:focus:before, nav .underline-from-center:active:before {
+    left:0;
+    right:0;
+}
+
+nav .form {
+    float:right;
+    width:8%;
+    color:#8a8787;
+    margin-top:-20px;
+}
+
+nav form {
+    padding-left: 14px;
+}
+
+nav form select {
+    float:left;
+    border:none;
+    color:#8a8787;
+}
+
+nav .form .search-icon {
+    float:right;
+    border-left:2px solid #DDD;
+    padding-left:10px;
+    font-size:20px
+}
+
+
+/* ========================================== End navgation ========================================== */
+
+/* ========================================== StartSecation One========================================== */
+
+/* ===== Header ===== */
+
+header{padding:4% 0 6% 0}
+
+header h2 {
+    float:left;
+}
+
+header form {float:right;}
+
+header select {
+    background-color:#E33B3B;
+    border:none;
+    padding:8px 7px;
+    color:#FFF;
+    font-size:16px;
+}
+
+/* ===== body ===== */
+
+.top, .center, .bottom {
+    padding:2% 0;
+    width:100%;
+}
+
+.box {
+    float:left;
+}
+
+.color {
+    height:250px;
+    background-color:#362D30;
+}
+
+.text {padding-top:25px;}
+
+.text h4 {
+    color:#362D30;
+    letter-spacing:2.5px;
+}
+
+.text p {
+    color:#8a8787;
+    font-weight:bold;
+    font-size:11px;
+    padding-top:10px;
+}
+
+.right{float:right;}
+
+.text {
+    padding-top:25px;
+}
+
+.text h4 {
+    color:#362D30;
+    letter-spacing:2.5px;
+}
+
+.text p {
+    color:#8a8787;
+    font-weight:bold;
+    font-size:11px;
+    padding-top:10px;
+}
+
+.top .left {width:30%;}
+
+.top .right{width:65%;}
+
+.top .right .color {
+    background-color:#362D30;
+    text-align:center;
+    padding:10%;
+    color:#FFF;    
+}
+
+.top .right .color:hover{background-color:#E33B3B;}
+
+.top .right .color h3 {
+    font-weight:100;
+    font-size:20px;
+    line-height:1.5;
+}
+
+.top .right .color p {
+    padding-top: 14px;
+    font-size: 16px;
+    font-weight: 100;
+    color:#ffffffe0;
+}
+
+
+.center .left {width:65%;}
+
+.center .right{width:30%;}
+
+.bottom .box {width:33.33333%;}
+
+.bottom .size {padding-right:5%;}
+
+/* ===== footer ===== */
+
+footer {
+    padding-top:7%;
+    text-align:center;
+    padding-bottom:2%;
+}
+
+footer .hvr-box-shadow-outset {
+    font-size:18px;
+    display:inline-block;
+    vertical-align:middle;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property:box-shadow;
+    transition-property:box-shadow;
+    background-color:#E33B3B;
+    padding:10px;
+    color:#FFF;
+}
+
+.hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* ========================================== End Secation One ========================================== */
+
+/* ========================================== Start Secation Two ========================================== */
+
+.two{
+    background-color:#362D30;
+    height:500px;
+    color:#FFF;
+    text-align:center;
+}
+
+.two .youtube{
+    padding-top:7%;
+}
+
+.youtube h1{
+    font-size:50px;
+    font-weight:100;
+    letter-spacing:6px;
+}
+
+.youtube i {padding-bottom:40px;}
+
+.youtube p{
+    line-height:1.5;
+    font-size:13px;
+    color:#ffffffe0;
+}
+
+/* ========================================== End Secation Two ========================================== */
+
+/* ========================================== Start Secation Three ========================================== */
+
+.three {
+    background-color:#F63C3D;
+    height:200px;
+    padding:3% 0;
+    text-align:center;
+    color:#FFF;
+}
+
+.three h4{
+    font-size:25px;
+    font-weight:100;
+}
+
+.three p {
+    line-height:2;
+    color:#ffffffe0;
+    padding-bottom:2%;
+}
+
+.three .btn {
+    background-color:#F63C3D;
+    color:#fff;
+    padding:6px 30px;
+    letter-spacing:2px;
+    cursor:pointer;
+    border:0 solid;
+    box-shadow:inset 0 0 20px rgba(255, 255, 255, 0);
+    outline:1px solid;
+    outline-color:rgba(255, 255, 255, .5);
+    outline-offset:0px;
+    text-shadow:none;
+    transition:all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.three .btn:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+
+/* ========================================== End Secation Three ========================================== */
+
+/* ========================================== Start Secation Four ========================================== */
+
+.four {
+    background-color:#31282B;
+    height:720px;
+    color:#FFF;
+    text-align:center;
+    padding:3% 0;
+}
+
+.icon ul{
+    padding-bottom:4%;
+    padding-top:2%;
+}
+
+.icon ul li{
+    display:inline-block;
+    width:30%;
+}
+
+.icon ul li i {
+    color:#F63C3D;
+    padding-bottom:20px;
+}
+
+.icon ul li h3 {
+    font-size:35px;
+    line-height:1.5;
+    letter-spacing:5px;
+}
+
+.icon ul li p {
+    font-size:13px;
+    color:#ffffffe0;
+}
+
+.contact h2 {
+    font-size:30px;
+    font-weight:100;
+    line-height:2;
+}
+
+.contact form select {
+    background-color:#E33B3B;
+    border:none;
+    padding:8px 7px;
+    color:#FFF;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.contact form #inp {
+    margin-bottom:15px;
+    margin-top:10px;
+    margin-right:1%;
+    background:none;
+	height:32px;
+	padding:6px 16px;
+	border:none;
+    color:#FFF;
+    border:1px solid #ffffff9c;
+    width:20%;
+}
+
+.contact form textarea {
+    background:none;
+	height:32px;
+	padding:6px 16px;
+	border:none;
+    color:#FFF;
+    padding:12px 16px;
+    border:1px solid #ffffff9c;
+    width:62.5%;
+    height:220px;
+    margin-right:1%;
+}
+
+.contact form #submit {
+    background-color: #FFF;
+    border:0;
+    padding:10px 15px;
+    margin-top:22px;
+    color:#31282B;
+}
+
+/* ========================================== End Secation Four ========================================== */
+
+/* ========================================== Start Secation Five ========================================== */
+
+.five {
+    background-color:#362D30;
+    height:450px;
+    color:#FFF;
+    padding:7% 0;
+}
+
+.location {
+    padding:3% 0;
+    margin-left:30%;
+    text-align:center;
+    height:250px;
+    background-color:#F63C3D;
+    width:40%;
+}
+
+.location i {
+    padding:10px 0;
+}
+
+.location .head {
+   font-size:13px; 
+}
+
+.location h5 {
+    padding:10px 0;
+    font-size:17px;
+    letter-spacing:3px;
+}
+
+.location .number {
+    font-size:20px;
+    letter-spacing:4px;
+}
+
+/* ========================================== End Secation Five ========================================== */
+
+/* ========================================== Start Footer ========================================== */
+.design {
+    background-color:#31282B;
+    margin:0;
+    padding:0;
+    text-align:center;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+.design p {
+    line-height:1.8;
+    color:#b5b3b3;
+    font-size:18px;
+    font-style:italic;
+    font-weight:bold;
+}
+.design p a {
+    color:#F63C3D;
+}
+
+.design ul
+{
+    list-style:none;
+    padding-left:0;
+}
+.design ul li {
+    display:inline-block;
+    letter-spacing:15px;
+}
+.design ul li a {color:#b5b3b3;}
+
+/* ========================================== End Footer ========================================== */
